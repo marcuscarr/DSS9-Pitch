@@ -1,0 +1,37 @@
+---
+title       : Lumber 
+subtitle    : How much can I get from this tree?
+author      : codith
+job         : Developing Data Products, Coursera Data Science Specialization
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : prettify  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+Testing Subscript and Superscript
+========================================================
+
+This is an R Markdown document. 
+
+Pandoc includes numerous extensions to markdown, and one 
+of them is *subscript* and *superscript*.
+
+Here's the example from the Pandoc help page 
+(http://johnmacfarlane.net/pandoc/README.html#superscripts-and-subscripts): 
+H~2~O is a liquid.  2^10^ is 1024.
+
+For fun, here's an R code block with some code from @Spacedman:
+
+```{r}
+list.depth <- function(this, thisdepth = 0) {
+# http://stackoverflow.com/a/13433689/1270695
+  if(!is.list(this)) {
+    return(thisdepth)
+  } else {
+    return(max(unlist(lapply(this, list.depth, thisdepth = thisdepth+1))))    
+  }
+}
+```
