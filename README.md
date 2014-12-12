@@ -1,4 +1,4 @@
-data-products-pitch
+Developing Data Products
 ===================
 
-Host directory for Developing Data Products pitch deck
+[Developing Data Products](https://www.coursera.org/course/devdataprod) pitch deck.
